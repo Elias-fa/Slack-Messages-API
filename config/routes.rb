@@ -8,5 +8,16 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy', as: :logout
 
+  scope module: 'teams' do
+    get 'teams/directory' => 'directory#index', as: :team_directory
+    post 'teams/:id/add' => 'directory#add', as: :add_team
+
+    get 'teams' => 'root#index', as: :teams
+    get 'teams/new' => 'root#new', as: :new_team
+    post 'teams' => 'root#create'
+    get 'teams/:id' => 'root#show', as: :team
+  end
+
+  
 
 end

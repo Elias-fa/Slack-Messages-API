@@ -1,0 +1,11 @@
+<%= link_to "New Team", new_team_path %>
+
+<%= link_to "Team Directory", team_directory_path %>
+
+<% @team.each do |team| %>
+  <div class="team">
+    <p><%= link_to team.name, team_path(team) %></p>
+    <p><%= team.description %></p>
+    <p><%= pluralize(team.users.count, "User") %></p>
+  </div>
+<% end %>
