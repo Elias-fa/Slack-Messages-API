@@ -1,0 +1,8 @@
+<%= simple_form_for @channel do |f| %>
+  <%= f.hidden_field :team_id, value: @team.id %>
+
+  <%= f.input :name %>
+  <%= f.input :description %>
+
+  <%= f.button :submit %>
+<% end %>
