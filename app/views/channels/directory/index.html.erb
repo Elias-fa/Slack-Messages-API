@@ -1,0 +1,7 @@
+<% @channels.each do |channel| %>
+  <div class="channel">
+    <p> <%= channel.name %> </p>
+    <p> <%= channel.description %> </p>
+    <%= link_to "Add Me", add_channel_path(channel.id), method: :post %>
+  </div>
+<% end %>
