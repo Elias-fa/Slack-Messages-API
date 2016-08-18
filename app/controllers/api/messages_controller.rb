@@ -1,5 +1,5 @@
 class Api::MessagesController < ApplicationController
-  before_actio do
+  before_action do
     request.format = :json
   end
 
