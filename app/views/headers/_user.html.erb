@@ -1,7 +1,9 @@
 <header class="main">
-  <h1><%= link_to "Slack Clone" %></h1>
+  <h1><%= link_to "Slack Clone",  %></h1>
   <nav>
     <p><%= @current_user.first_name %></p>
+    <p><%= link_to "Teams", teams_path %></p>
+    <p><%= link_to "Teams Directory", team_directory_path %></p>
     <%= link_to "Logout", logout_path, method: :delete %>
   </nav>
 </header>
