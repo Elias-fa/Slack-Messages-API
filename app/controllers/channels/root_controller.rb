@@ -1,6 +1,6 @@
 class Channels::RootController < ApplicatonController
   def show
-    @channel = Channel.find(parmas[:channel_id])
+    @channel = Channel.find(params[:channel_id])
     @team = @channel.team
     @message = Message.new
     @messages = @channel.messages
@@ -24,6 +24,6 @@ class Channels::RootController < ApplicatonController
   private
 
   def allowed_params
-    paramas.require(:channel).permit(:name, :description, :team_id)
+    params.require(:channel).permit(:name, :description, :team_id)
   end
 end
