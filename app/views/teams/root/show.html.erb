@@ -1,16 +1,16 @@
-<%= link_to "All Teams", teams_path %>
+<%= link_to 'All Teams', teams_path %>
 
 <h1><%= @team.name %></h1>
 <p><%= @team.description %></p>
 
 <h2>My Channels</h2>
 
-<%= link_to "Create Channel", new_channel_path %>
+<%= link_to "Create Channel", new_channel_path(@team.id) %>
 
-<% @channel.each do |channel| %>
+<% @channels.each do |channel| %>
   <div class="channel">
     <p><%= link_to channel.name, channel_path(channel.id) %></p>
     <p><%= channel.description %></p>
-    <p><%= pluralize(channel.users.count), "User" %></p>
+    <p><%= pluralize(channel.users.count, 'User') %></p>
   </div>
 <% end %>

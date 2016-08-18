@@ -27,6 +27,6 @@ class Teams::RootController < ApplicationController
   private
 
   def allowed_params
-    params.require(:team).permt(:name, :description)
+    params.require(:team).permit(:name, :description)
   end
 end

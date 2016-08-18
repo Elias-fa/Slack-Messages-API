@@ -2,6 +2,8 @@ class Channel < ApplicationRecord
   validates :name, presence: true
   validates :description, presence: true
 
+  scope :by_team, -> (team) { where(team_id: team.id) }
+
   belongs_to :team
   has_many :messages
 
