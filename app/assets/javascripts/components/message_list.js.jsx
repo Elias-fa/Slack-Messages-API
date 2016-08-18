@@ -1,14 +1,16 @@
 var MessageList = React.createClass({
-  renderMessage: function() {
-    return this.props.message.map(function(message) {})
+  renderMessages: function() {
+    return this.props.messages.map(function(message) {
+      return(<Message key={ message.id } data={ message } />)
+    })
   },
 
   render: function() {
     var messageComponents = this.renderMessages()
-    return (
+    return(
       <div className="message-list">
         { messageComponents }
       </div>
-      );
+    );
   }
 });

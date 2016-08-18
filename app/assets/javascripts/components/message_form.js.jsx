@@ -5,11 +5,11 @@ var MessageForm = React.createClass({
   },
 
   render: function() {
-    return (
+    return(
       <div className="message-form">
         <input type="text" ref="message"/>
-        <a href="#" onClick={ this.submitMessage }> Add Message</a>
-        </div>
-      );
+        <a href="#" onClick={ this.submitMessage }>Add Message</a>
+      </div>
+    );
   }
 });

@@ -1,7 +1,7 @@
 var Message = React.createClass({
 
   render: function() {
-    return (
+    return(
       <div className="message">
         { this.props.data.body }
       </div>
