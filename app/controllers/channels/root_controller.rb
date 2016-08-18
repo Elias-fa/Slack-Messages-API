@@ -1,8 +1,8 @@
-class Channels::RootController < ApplicatonController
+class Channels::RootController < ApplicationController
   def show
     @channel = Channel.find(params[:channel_id])
     @team = @channel.team
-    @message = Message.new
+    @message  = Message.new
     @messages = @channel.messages
   end
 

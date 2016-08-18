@@ -26,4 +26,9 @@ Rails.application.routes.draw do
     post 'channels' => 'root#create'
     get 'channels/:channel_id' => 'root#show', as: :channel
   end
+
+  namespace :api do
+    get 'channels/:id/messages' => 'messages#index'
+    post 'channels/:id/messages' => 'messages#create'
+  end
 end
