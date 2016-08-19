@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'normalize-rails'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'react-rails'

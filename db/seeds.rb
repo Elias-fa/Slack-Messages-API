@@ -20,12 +20,12 @@ doug = User.create(
   password_confirmation: '1234')
 
 
-iron_yard = Team.create(name: "The Iron Yard", description: " The Best! Enough said!")
-station = Team.create(name: "Houston Staion", description: "No Idea")
+iron_yard = Team.create(name: "The Iron Yard", description: Faker::StarWars.quote)
+station = Team.create(name: "Houston Staion", description: Faker::Hacker.say_something_smart)
 
-rails = Channel.create(name: "Houston Rails", description: "Great", team: iron_yard)
-javascript = Channel.create(name: "Houston Javascript", description: "meh!", team: iron_yard)
-innovation = Channel.create(name: "Innovation!", description: "No Doug Allowed!", team: station)
+rails = Channel.create(name: "Houston Rails", description: Faker::Hacker.abbreviation, team: iron_yard)
+javascript = Channel.create(name: "Houston Javascript", description: Faker::StarWars.quote, team: iron_yard)
+innovation = Channel.create(name: "Innovation!", description: Faker::StarWars.quote, team: station)
 
 iron_yard.users << [jay, cris, doug]
 station.users << jay
