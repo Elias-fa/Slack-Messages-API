@@ -50,20 +50,43 @@
   font-weight: bold;
 }
 
-div.page-header {
-  display: block;
-  text-decoration: none;
-  text-indent: 20px;
-  line-height: 40px;
-}
- div.page-header a:hover {
-   text-decoration: none;
-   color: #fff;
-   font-weight: bold;
- }
- 
 li h4 {
   display: block;
   text-decoration: none;
   color: #fff;
+}
+
+// User Nav //
+div.user-nav {
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  background-color: #ddd;
+}
+
+li.logout {
+  margin-top: 20px;
+}
+
+li.logout a:hover {
+  background: red;
+  color: #fff;
+  font-weight: bold;
+}
+
+li.teams {
+  margin-top: 20px;
+}
+// Guest Header //
+div.guest-nav {
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  background-color: #fff;
 }
