@@ -1,9 +1,12 @@
-<header class="main">
-  <h1><%= link_to "Slack Clone" %></h1>
-  <nav>
-    <p><%= @current_user.first_name %></p>
-    <p><%= link_to "Teams", teams_path %></p>
-    <p><%= link_to "Teams Directory", team_directory_path %></p>
-    <%= link_to "Logout", logout_path, method: :delete %>
-  </nav>
-</header>
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <div class="page-header">
+        <h2><%= link_to "Slack Clone" %></h2>
+      </div>
+      <li><h4>Hi <%= @current_user.first_name %>!</h4></li>
+      <li><%= link_to "Logout", logout_path, method: :delete %></li>
+      <li><%= link_to "My Teams", teams_path %></li>
+      <li><%= link_to "Team Directory", team_directory_path %></li>
+    </ul>
+  </div>
