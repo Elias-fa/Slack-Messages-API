@@ -8,7 +8,8 @@ class UsersController < ApplicationController
     @user = User.new(allowed_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_path
+      flash[:success] = "Welcome To Slack #{@user.first_name}"
+      redirect_to root_path(@user)
     else
       render :new
     end
