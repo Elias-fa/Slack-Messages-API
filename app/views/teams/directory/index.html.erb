@@ -1,7 +1,11 @@
-<% @teams.each do |team| %>
-  <div class="team">
-    <p> <%= team.name %></p>
-    <p> <%= team.description %></p>
-    <%= link_to "Add Me", add_team_path(team.id), method: :post %>
+<div class="row">
+  <div class="col-md-9 col-md-offset-2">
+    <% @teams.each do |team| %>
+      <div class="team">
+        <p> <%= team.name %></p>
+        <p> <%= team.description %></p>
+        <%= link_to "Add Me", add_team_path(team.id), method: :post %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
