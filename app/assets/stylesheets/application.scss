@@ -9,3 +9,42 @@
 div.alert.alert-danger {
   margin-bottom: 8px;
 }
+
+body {
+  background-color: #ececec;
+}
+
+.sidebar-btn {
+  font-size: 20px;
+  background-color: transparent;
+  color: #D69832;
+  border: none;
+  text-shadow:
+  -1px -1px 0 #475D14,
+  1px -1px 0 #475D14,
+  -1px 1px 0 #475D14,
+  1px 1px 0 #475D14;
+}
+
+.sidebar-btn:hover {
+  color: #475D14;
+  text-shadow:
+  -1px -1px 0 #D69832,
+  1px -1px 0 #D69832,
+  -1px 1px 0 #D69832,
+  1px 1px 0 #D69832;
+}
+
+body {
+  background: url("/assets/slack_welcome.png") no-repeat center center fixed;
+  -webkit-backgroud-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#page-content-wrapper {
+  background:  linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3));
+  height: 100%
+
+}
