@@ -1,14 +1,41 @@
 <style>
   body {
-    background: url("/slack_welcome.png") center fixed;
+    background: url("/slack_welcome.png") no-repeat center center fixed;
     -webkit-backgroud-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
+
+  #page-content-wrapper {
+    background:  linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3));
+    height: 100%
+
+  }
+  .welcome{
+    color: #F5F8FA;
+    text-shadow:
+    -1px -1px 0 #4f4d4d,
+    1px -1px 0 #4f4d4d,
+    -1px 1px 0 #4f4d4d,
+    1px 1px 0 #4f4d4d;
+  }
+  h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-bottom: 0px;
+  }
+
+  p {
+  margin-left: 5px;
+  margin-bottom: 0px;
+  }
 </style>
 
-<div class="welcome">
-  <h1>Welcome#index</h1>
-  <p>Find me in app/views/welcome/index.html.erb</p>
-</div>
+<center>
+  <div class="welcome">
+    <h1>Slack</h1>
+    <p>Get involved and stay connected.</p>
+  </div>
+</center>
