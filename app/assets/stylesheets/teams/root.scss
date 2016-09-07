@@ -1,0 +1,52 @@
+.channels-col {
+  padding-top: 25px;
+  margin-left: 13%;
+}
+.channel-container {
+  min-height: 418px;
+  border: 1px solid #9e9a9a;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #333131;
+  background-color: #F5F8FA;
+  opacity: 0.9;
+  filter: alpha(opacity=30);
+}
+
+.channel-list {
+  margin: 30px 40px;
+  padding-left: 25px;
+}
+
+h1.team-name {
+  color: #000;
+  margin-bottom: 1px;
+}
+
+p {
+  color: #313B38;
+}
+
+
+p.channel-h3 {
+  margin-bottom: 0px;
+}
+h2.channels-name {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+h2.channels-name a {
+  color: #000;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+h2.channels-name a:hover {
+  color: #3d3a3a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+tbody {
+  color: #106758;
+}

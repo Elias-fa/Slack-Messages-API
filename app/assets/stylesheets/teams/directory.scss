@@ -1,5 +1,5 @@
 .teams-container {
-  height: 418px;
+  min-height: 418px;
   border: 1px solid #9e9a9a;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #333131;
@@ -47,12 +47,12 @@ a.btn.btn-success.btn-md:hover {
 // My Teams //
 
 h2.my-teams-link a {
-  color: #020224;
+  color: #000;
   text-decoration: none;
 }
 
 h2.my-teams-link a:hover {
-  color: #000;
+  color: #3d3a3a;
   font-weight: bold;
 }
 
