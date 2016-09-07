@@ -4,39 +4,41 @@
       <center>
         <h1 class="page-header">Log In!</h1>
       </center>
-      <%= form_tag login_path, method: :post, class: 'form-horizontal' do %>
-        <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-          <div class="col-sm-8">
-            <%= email_field_tag :email, "", class: 'form-control', placeholder: 'Your Email'%>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-          <div class="col-sm-8">
-            <%= password_field_tag :password, "", class: 'form-control', placeholder: 'Your Password' %>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-success">Log In</button>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Remember me
-              </label>
+      <div class="login-fields">
+        <%= form_tag login_path, method: :post, class: 'form-horizontal' do %>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-8">
+              <%= email_field_tag :email, "", class: 'form-control', placeholder: 'Your Email'%>
             </div>
           </div>
-        </div>
-      <% end %>
-      <center>
-        <div class="col-xs-4 col-xs-offset-4 cancel">
-          [ <%= link_to "Cancel Request", root_path %> ]
-        </div>
-      </center>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-8">
+              <%= password_field_tag :password, "", class: 'form-control', placeholder: 'Your Password' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success">Log In</button>
+            </div>
+          </div>
+        <% end %>
+        <center>
+          <div class="col-xs-4 col-xs-offset-4 cancel">
+            [ <%= link_to "Cancel Request", root_path %> ]
+          </div>
+        </center>
+      </div>
     </div>
   </div>
 </div>
