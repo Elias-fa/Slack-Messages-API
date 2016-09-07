@@ -1,4 +1,5 @@
 .teams-container {
+  height: 418px;
   border: 1px solid #9e9a9a;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #333131;
@@ -21,7 +22,6 @@
   border-bottom: 1px solid #e9e8e8;
 }
 
-
 h2 {
   color: #000;
 }
@@ -29,17 +29,25 @@ hr {
   border-top: 1px solid #e9e8e8;
 }
 
+.teams-col {
+  padding-top: 50px;
+  margin-left: 13%
+}
+
 // Teams //
 
-.teams-col {
-  padding-top: 40px;
-  margin-left: 14%
+a.btn.btn-success.btn-md {
+  background-color: #106758;
+}
+
+a.btn.btn-success.btn-md:hover {
+  background-color: #278265;
 }
 
 // My Teams //
 
 h2.my-teams-link a {
-  color: #000;
+  color: #020224;
   text-decoration: none;
 }
 
@@ -50,9 +58,4 @@ h2.my-teams-link a:hover {
 
 .user-count {
   font-weight: bold;
-}
-
-.my-teams-col {
-  margin-left: 13%;
-  padding-top: 50px;
 }

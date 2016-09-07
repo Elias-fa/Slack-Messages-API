@@ -1,6 +1,6 @@
 .signup {
-  padding-top: 45px;
-  margin-left: 158px;
+  padding-top: 30px;
+  margin-left: 159px;
   color: #000;
 }
 .signup-form {
@@ -24,4 +24,13 @@
 
 .page-header {
   margin-bottom: 40px;
+  border-bottom: 1px solid #e9e8e8;
+}
+
+input.btn.btn-success.btn-md {
+  background-color: #278265;
+}
+
+input.btn.btn-success.btn-md:hover {
+  background-color: #106758;
 }
