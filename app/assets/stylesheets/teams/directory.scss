@@ -1,29 +1,40 @@
 .teams-container {
   border: 1px solid #9e9a9a;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px #393737;
-  background-color: #B2B2B2;
+  box-shadow: 10px 10px 5px #333131;
+  background-color: #F5F8FA;
   opacity: 0.9;
   filter: alpha(opacity=30);
 }
 
 .teams-list {
-  margin: 50px 50px;
+  margin: 30px 40px;
   padding-left: 25px;
 }
 
-.page-header {
+.page-header.teams {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 20px;
   color: #000;
-  border-bottom: 1px solid #9e9a9a;
+  border-bottom: 1px solid #e9e8e8;
 }
+
 
 h2 {
   color: #000;
 }
 hr {
-  border-top: 1px solid #9e9a9a;
+  border-top: 1px solid #e9e8e8;
 }
 
+// Teams //
+
+.teams-col {
+  padding-top: 40px;
+  margin-left: 14%
+}
 
 // My Teams //
 
@@ -33,15 +44,15 @@ h2.my-teams-link a {
 }
 
 h2.my-teams-link a:hover {
-  color: #fff;
+  color: #000;
   font-weight: bold;
-  text-shadow:
-  -1px -1px 0 #4f4d4d,
-  1px -1px 0 #4f4d4d,
-  -1px 1px 0 #4f4d4d,
-  1px 1px 0 #4f4d4d;
 }
 
 .user-count {
   font-weight: bold;
+}
+
+.my-teams-col {
+  margin-left: 13%;
+  padding-top: 50px;
 }
