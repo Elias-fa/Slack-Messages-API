@@ -68,6 +68,18 @@ div.user-nav {
   border-right: 1px solid #ddd;
 }
 
+div.user-nav img {
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+
+}
+div.user-nav img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 li.logout {
   margin-top: 20px;
 }

@@ -12,10 +12,6 @@ div.alert.alert-danger {
   margin-bottom: 8px;
 }
 
-body {
-  background-color: #ececec;
-}
-
 .sidebar-btn {
   font-size: 20px;
   background-color: transparent;
@@ -46,7 +42,6 @@ body {
 }
 
 #page-content-wrapper {
-  background:  linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3));
-  height: 100%
-
+  background: linear-gradient( rgba(0,0,0, 0.2), rgba(0,0,0, 0.1));
+  min-height: 100%;
 }
