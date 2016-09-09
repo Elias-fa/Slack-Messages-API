@@ -1,5 +1,5 @@
 class Channels::DirectoryController < ApplicationController
-  before_acton :require_login
+  before_action :require_login
 
   def index
     @team = Team.find(params[:id])
