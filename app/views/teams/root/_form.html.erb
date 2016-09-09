@@ -1,10 +1,41 @@
 <div class="row">
-  <div class="col-md-9 col-md-offset-2">
-    <%= simple_form_for @team do |f|  %>
-      <%= f.input :name %>
-      <%= f.input :description %>
+  <div class="col-md-9 col-md-offset-2 new-team-col">
+    <div class="new-team">
+      <center>
+        <h1 class="page-header">New Team!</h1>
+      </center>
+      <%= form_for(@team, :html => {class: "form-horizontal", role: "form"}) do |f| %>
 
-      <%= f.button :submit %>
-    <% end %>
+        <div class="form-group">
+          <div class="control-label col-sm-2">
+            <%= f.label :name %>
+          </div>
+          <div class="col-sm-9">
+            <%= f.text_field :name, class: "form-control", placeholder: "Team Name", autofocus: true %>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="control-label col-sm-2">
+            <%= f.label :description %>
+          </div>
+          <div class="col-sm-9">
+            <%= f.text_area :description, class: "form-control", placeholder: "Team Description", autofocus: true %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10 new-team-btn">
+            <%= f.button :submit, class: "btn btn-success btn-md" %>
+          </div>
+        </div>
+
+        <center>
+          <div class="col-xs-4 col-xs-offset-4 cancel">
+            [ <%= link_to "Cancel Request", teams_path %> ]
+          </div>
+        </center>
+      <% end %>
+
+    </div>
   </div>
 </div>
