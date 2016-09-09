@@ -1,8 +1,18 @@
-<p>Team: <%= @team.name %></p>
+<div class="row">
+  <div class="col-md-9 col-md-offest-2 new-channel-col">
+    <div class="new-channel">
+      <center>
+        <h1 class="page-header">
+          Team: <%= link_to @team.name, team_path(@team) %>
+        </h1>
+      </center>
 
-<p><%= @channel.name %></p>
-<p><%= @channel.description %></p>
+      <p><%= @channel.name %></p>
+      <p><%= @channel.description %></p><hr>
 
-<h2>Messages</h2>
+      <h2>Messages</h2>
 
-<%= react_component 'MessagesContainer', { channelId: @channel.id } %>
+      <%= react_component 'MessagesContainer', { channelId: @channel.id } %>
+    </div>
+  </div>
+</div>
