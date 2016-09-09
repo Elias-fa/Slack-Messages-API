@@ -38,3 +38,38 @@ h1.page-header.channel-header a:hover {
   color: #000;
   font-weight: bold;
 }
+
+// Channel Messages //
+.channel-messages-col {
+  padding-top: 30px;
+  margin-left: 159px;
+  color: #000;
+}
+
+.channel-messages {
+  background-color: #F5F8FA;
+  opacity: 0.9;
+  filter: alpha(opacity=30);
+  margin-top: 25px;
+  margin-bottom: 40px;
+  margin-left: 8px;
+  margin-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  min-height: 418px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #333131;
+}
+
+div.messages {
+  margin-top: 100px;
+  border-top: 1px solid #000;
+}
+
+.messages {
+  height: 50px;
+}
