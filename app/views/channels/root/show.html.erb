@@ -1,6 +1,6 @@
 <div class="row">
-  <div class="col-md-9 col-md-offest-2 new-channel-col">
-    <div class="new-channel">
+  <div class="col-md-9 col-md-offest-2 channel-messages-col">
+    <div class="channel-messages">
       <center>
         <h1 class="page-header">
           Team: <%= link_to @team.name, team_path(@team) %>
@@ -8,10 +8,11 @@
       </center>
 
       <p><%= @channel.name %></p>
-      <p><%= @channel.description %></p><hr>
+      <p><%= @channel.description %></p>
 
-      <h2>Messages</h2>
-
+      <div class="messages">
+        <h4>Messages</h4>
+      </div>
       <%= react_component 'MessagesContainer', { channelId: @channel.id } %>
     </div>
   </div>
