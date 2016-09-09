@@ -1,4 +1,4 @@
-class Channels::DirectoryController < ApplicatonController
+class Channels::DirectoryController < ApplicationController
   before_acton :require_login
 
   def index
