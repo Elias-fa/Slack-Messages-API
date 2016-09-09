@@ -1,0 +1,40 @@
+// New Channel //
+
+.new-channel-col {
+  padding-top: 30px;
+  margin-left: 159px;
+  color: #000;
+}
+
+.new-team {
+  background-color: #F5F8FA;
+  opacity: 0.9;
+  filter: alpha(opacity=30);
+  margin-top: 25px;
+  margin-bottom: 40px;
+  margin-left: 8px;
+  margin-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  min-height: 418px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #333131;
+}
+
+h1.page-header.channel-header {
+  color: #333131;
+}
+h1.page-header.channel-header a {
+  color: #000;
+  font-weight: bold;
+}
+
+h1.page-header.channel-header a:hover {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}

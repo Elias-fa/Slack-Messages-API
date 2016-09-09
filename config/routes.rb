@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     get 'teams/:id/channels/directory' => 'directory#index', as: :channel_directory
     post 'channels/:id/add' => 'directory#add', as: :add_channel
 
-    get 'teams/:id/channesl/new' => 'root#new', as: :new_channel
+    get 'teams/:id/channels/new' => 'root#new', as: :new_channel
     post 'channels' => 'root#create'
     get 'channels/:channel_id' => 'root#show', as: :channel
   end
